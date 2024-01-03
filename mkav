@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for A in `find * -maxdepth 1 -type d`; do 
+
+	if [ -f $A/Avatar.ini ]; then
+		(cd $A; zip ../$A.Avatar *)
+	fi
+
+done
